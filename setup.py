@@ -2,8 +2,6 @@ import sys
 from setuptools import setup
 from setuptools.command.test import test as TestCommand
 
-from docopt import __version__
-
 
 class PyTestCommand(TestCommand):
     """ Command to run unit py.test unit tests
@@ -21,7 +19,7 @@ class PyTestCommand(TestCommand):
 
 setup(
     name='docopt',
-    version=__version__,
+    version="0.6.2",
     author='Vladimir Keleshev',
     author_email='vladimir@keleshev.com',
     description='Pythonic argument parser, that will make you smile',
